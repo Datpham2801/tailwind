@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="text-gray-600 font-body">
+
+  <div class="grid md:grid-cols-3">
+    <div class="md:col-span-1">
+      <nav class="ml-12">
+        <div class="flex justify-between">
+          <h1 class="font-bold uppercase p-4">
+            <a href="/">Food Ninja</a>
+          </h1>
+          <svg id="btnList" class="mr-4 cursor-pointer md:hidden" width="30px" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path>
+          </svg>
+        </div>
+        <ul class="hidden items-end flex-col m-3 md:flex " id="menu">
+          <li class="text-gray-700 w-20">
+            <a class="flex justify-between" href="#">
+              <svg width="25px" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="w-20">
+            <a class="flex justify-between" href="#">
+              <svg width="25px" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span>About</span>
+            </a>
+          </li>
+          <li class="w-20">
+            <a class="flex justify-between" href="#">
+              <svg width="25px" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <main class="p-12 bg-gray-100 md:col-span-2">
+      <div class="text-primary flex justify-center md:justify-end mr-8">
+        <a class="mr-2 btn md:border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-900" href="#">Log in</a>
+        <a class="md:border-primary md:border-2 btn hover:bg-primary hover:text-white transition-all ease-out duration-900 " href="#">Sign up</a>
+      </div>
+
+      <header>
+        <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+        <h3 class="text-2xl font-semibold">For Ninjas</h3>
+      </header>
+
+      <div>
+        <h4 class="font-bold py-4 md:py-8">Latest Recipes</h4>
+  
+        <div class="grid lg:grid-cols-3 gap-10">
+          <!-- cards go here -->
+          <div class="card"> 
+            <img src="./img/curry.jpg" class="w-full h-32 sm:h-48 object-cover" alt="stew">
+            <div class="p-2">
+              <span class="font-bold">5 Bean Chili Stew</span>
+              <span class="block text-gray-300 mb-2">Recipe by Mario</span>
+            </div>
+            <div class="badges">
+              <span>25 mins</span>
+            </div>
+          </div>
+          <div class="card"> 
+            <img src="./img/curry.jpg" class="w-full h-32 sm:h-48 object-cover" alt="stew">
+            <div class="p-2">
+              <span class="font-bold">5 Bean Chili Stew</span>
+              <span class="block text-gray-300 mb-2">Recipe by Mario</span>
+            </div>
+            <div class="badges">
+              <span>25 mins</span>
+            </div>
+          </div>
+          <div class="card"> 
+            <img src="./img/curry.jpg" class="w-full h-32 sm:h-48 object-cover" alt="stew">
+            <div class="p-2">
+              <span class="font-bold">5 Bean Chili Stew</span>
+              <span class="block text-gray-300 mb-2">Recipe by Mario</span>
+            </div>
+            <div class="badges">
+              <span>25 mins</span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="font-bold py-4 md:py-8">Most Popular</h4>
+
+        <div>
+          <!-- cards go here -->
+        </div>
+      </div>
+
+      <div class="font-bold flex justify-center">
+        <div class="bg-secondary-200 btn text-white hover:px-3 hover:py-3 transition-all ease-out duration-500">Load more</div>
+      </div>    
+    </main>
+  </div>
+<script src="./index.js"></script>
+</body>
+</html>
